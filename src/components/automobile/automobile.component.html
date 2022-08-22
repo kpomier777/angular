@@ -1,0 +1,24 @@
+<div class="automobile">
+  <div
+    class="automobile__details"
+    [style]="{ backgroundColor: data.selectedColor }"
+  >
+    <p><span>ID:</span> {{ data.id }}</p>
+    <p><span>Type:</span> {{ data.type }}</p>
+    <p><span>Color:</span> {{ data.selectedColor }}</p>
+    <p><span>Capacity:</span> {{ data.capacity }}</p>
+    <p><span>Create Date:</span> {{ formatDate(data.createDate) }}</p>
+    <p><span>Price:</span> {{ data.price }} {{ data.moneyType }}</p>
+  </div>
+  <div class="automobile__buttons">
+    <button type="button" (click)="emitSelected.emit(data)">Buy</button>
+    <button
+      type="button"
+      *ngFor="let item of data.color; index as i"
+      [style]="{ backgroundColor: item }"
+      (click)="data.selectedColor = item"
+    >
+      {{ item }}
+    </button>
+  </div>
+</div>

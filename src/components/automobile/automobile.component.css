@@ -1,0 +1,38 @@
+.automobile {
+  border: 1px solid #000000;
+}
+
+.automobile__details {
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #000000;
+}
+
+.automobile__details > p {
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+}
+
+.automobile__details > p:last-child {
+  margin-bottom: 0;
+}
+
+.automobile__details > p > span {
+  font-weight: 600;
+}
+
+.automobile__buttons {
+  padding: 1rem 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.automobile__buttons > button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: gray;
+}

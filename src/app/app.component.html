@@ -1,0 +1,28 @@
+<div class="app">
+  <div class="container">
+    <div class="space">
+      <h2>Autos Nuevos</h2>
+      <h3>Total Bolivianos: <span>0 BS</span></h3>
+      <h3>Total Dolares: <span>0 USD</span></h3>
+      <div class="items">
+        <automobile
+          *ngFor="let sale of saleList; index as i"
+          [data]="sale"
+          (emitSelected)="saleController($event)"
+        ></automobile>
+      </div>
+    </div>
+    <div class="space">
+      <h2>Autos Usados</h2>
+      <h3>Total Bolivianos: <span>0 BS</span></h3>
+      <h3>Total Dolares: <span>0 USD</span></h3>
+      <div class="items">
+        <automobile
+          *ngFor="let rental of rentalList; index as i"
+          [data]="rental"
+          (emitSelected)="rentalController($event)"
+        ></automobile>
+      </div>
+    </div>
+  </div>
+</div>
