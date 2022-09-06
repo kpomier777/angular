@@ -1,0 +1,55 @@
+.automobile {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.automobile__alerts {
+  padding: 0.5rem 1rem;
+}
+
+.automobile__alerts > span {
+  color: white;
+}
+
+.automobile__details {
+  padding: 1rem 1rem;
+  border-bottom: 1px solid black;
+}
+
+.automobile__details > p {
+  margin-bottom: 0.5rem;
+}
+
+.automobile__details > p:last-child {
+  margin-bottom: 0;
+}
+
+.automobile__details > p > span:nth-of-type(1) {
+  font-weight: 600;
+}
+
+.automobile__details > p > span:nth-of-type(2) {
+  text-transform: uppercase;
+}
+
+.automobile__buttons {
+  flex-grow: 1;
+  padding: 1rem 1rem;
+  display: grid;
+  align-content: flex-start;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.automobile__buttons > button {
+  cursor: pointer;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid black;
+}

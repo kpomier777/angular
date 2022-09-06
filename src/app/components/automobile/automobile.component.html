@@ -1,0 +1,58 @@
+<div
+  class="automobile"
+  (mouseenter)="active = true"
+  (mouseleave)="active = false"
+>
+  <div
+    class="automobile__alerts"
+    [style]="{ backgroundColor: car.status === 'enable' ? 'green' : 'red' }"
+  >
+    <span>{{ car.status === "enable" ? "Disponible" : "No disponible" }}</span>
+  </div>
+  <div class="automobile__details">
+    <p *ngIf="active">
+      <span>ID: </span>
+      <span>{{ car.id }}</span>
+    </p>
+    <p>
+      <span>Type: </span>
+      <span>{{ car.type }}</span>
+    </p>
+    <p>
+      <span>Color: </span>
+      <span>{{ car.currentColor }}</span>
+    </p>
+    <p>
+      <span>Capacity: </span>
+      <span>{{ car.capacity }}</span>
+    </p>
+    <p>
+      <span>Create Date: </span>
+      <span>{{ dateController(car.createDate) }}</span>
+    </p>
+    <p>
+      <span>Price: </span>
+      <span>{{ car.price }} {{ car.moneyType === "USD" ? "$" : "Bs" }}</span>
+    </p>
+  </div>
+  <div
+    class="automobile__buttons"
+    [style]="{ backgroundColor: car.currentColor }"
+  >
+    <button
+      type="button"
+      *ngFor="let color of car.color"
+      [style]="{ backgroundColor: color }"
+      (click)="changeController(car, 'currentColor', color)"
+    >
+      {{ color }}
+    </button>
+    <button
+      type="button"
+      (click)="changeController(car, 'process')"
+      [disabled]="car.status === 'enable' ? false : true"
+    >
+      {{ car.category }}
+    </button>
+  </div>
+</div>

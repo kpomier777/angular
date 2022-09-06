@@ -1,0 +1,28 @@
+<div class="app">
+  <div class="container">
+    <div class="space">
+      <h2>Autos Nuevos</h2>
+      <h3>Total BS: {{ TNB }}</h3>
+      <h3>Total $: {{ TND }}</h3>
+      <div class="items">
+        <automobile
+          *ngFor="let car of carsA"
+          [car]="car"
+          (change)="onChange($event)"
+        ></automobile>
+      </div>
+    </div>
+    <div class="space">
+      <h2>Autos Usados</h2>
+      <h3>Total BS: {{ TUB }}</h3>
+      <h3>Total $: {{ TUD }}</h3>
+      <div class="items">
+        <automobile
+          *ngFor="let car of carsB"
+          [car]="car"
+          (change)="onChange($event)"
+        ></automobile>
+      </div>
+    </div>
+  </div>
+</div>

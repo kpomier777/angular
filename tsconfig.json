@@ -1,0 +1,23 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "importHelpers": true,
+    "target": "ES2017",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["ES2017", "DOM"]
+  },
+  "angularCompilerOptions": {
+    "enableIvy": true,
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  }
+}
