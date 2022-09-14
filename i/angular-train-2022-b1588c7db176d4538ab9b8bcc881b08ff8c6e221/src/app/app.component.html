@@ -8,3 +8,21 @@
 <div>{{data | impure}}</div>
 
 <button (click)="data.push(100000)" >add</button>
+
+
+<br><button routerLink="user">changeUser</button>
+<button routerLink="">pathOriginal</button>
+
+<button (click)="goToUser()" >go to user from TS</button>
+<button (click)="goToRoot()">go to root from TS</button>
+
+
+<div style="border: 2px solid red">
+
+
+
+    <router-outlet>
+
+    </router-outlet>
+</div>
+
