@@ -1,0 +1,30 @@
+<p>ANGULAR</p>
+
+
+
+<form #testForm = "ngForm" (ngSubmit)="onSubmit(testForm)">
+
+    <br> LAST NAME : <input type="text" name="lastName" ngModel>
+
+    <br> AGE : <input type="text" name="age" ngModel >
+
+    <br> COUNTRY : <input type="text" name="country" ngModel>
+
+
+    <br> <button type="submit"> enviar </button>
+
+</form>
+
+<p> ---------------------------------------- </p>
+<form #testForm2 = "ngForm" (ngSubmit)="onSubmit(testForm)">
+
+    <br> LAST NAME : <input type="text" name="lastName" ngModel>
+
+    <br> AGE : <input type="text" name="age" ngModel >
+
+    <br> COUNTRY : <input type="text" name="country" ngModel>
+
+
+    <br> <button (click)="onSubmit(testForm2)"> enviar </button>
+
+</form>
