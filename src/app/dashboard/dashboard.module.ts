@@ -17,12 +17,12 @@ const routes: Routes =
                     {
                         title: 'Soy View 1',
                         path: 'view1',
-                        component: View1Component
+                        loadChildren:() => import('./view1/view1.module').then(m => m.View1Module)
                     },
                     {
                         title: 'Soy View 2',
                         path: 'view2',
-                        component: View2Component
+                        loadChildren:() => import('./view2/view2.module').then(m => m.View2Module)
                     }
                 ]
 

@@ -4,6 +4,7 @@ import {LoginComponent} from "./login/login.component";
 import {DashboardComponent} from "./dashboard/dashboard.component";
 import {View1Component} from "./dashboard/view1/view1.component";
 import {View2Component} from "./dashboard/view2/view2.component";
+import {ErrorComponent} from "./error/error.component";
 
 const routes: Routes = [
 
@@ -16,6 +17,13 @@ const routes: Routes = [
         path: 'dashboard',
         loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
 
+    },
+    {
+        path : 'error',
+        component : ErrorComponent
+    },
+    {
+        path: '**', redirectTo :'error'
     }
 
 ]
