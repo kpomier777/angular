@@ -46,5 +46,10 @@ export class AuthService {
     localStorage.removeItem('userId');
     this.router.navigate(['login'])
   }
+  public verifyLogged(): boolean {
+    const token = localStorage.getItem('token');
+    // return token ? true : false;
+    return !!token
+  }
 
 }

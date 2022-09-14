@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f3ff7a4-22b5-4425-b31e-5bad5a374bca" name="Changes" comment="[09-09-2022 task 3] can activate guard" />
+    <list default="true" id="6f3ff7a4-22b5-4425-b31e-5bad5a374bca" name="Changes" comment="[12-09-2022 task 1] guard with redirect">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/services/auth.service.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +80,7 @@
       <workItem from="1661806459563" duration="2240000" />
       <workItem from="1662672105487" duration="309000" />
       <workItem from="1662672418125" duration="6061000" />
-      <workItem from="1663018969018" duration="2299000" />
+      <workItem from="1663018969018" duration="2633000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <created>1659995064421</created>
@@ -155,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663021048595</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="[12-09-2022 task 1] guard with redirect">
+      <created>1663021454080</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663021454080</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +193,7 @@
     <MESSAGE value="[09-09-2022 task 1] auth interceptor part 1" />
     <MESSAGE value="[09-09-2022 task 2Â] auth expired interceptor" />
     <MESSAGE value="[09-09-2022 task 3] can activate guard" />
-    <option name="LAST_COMMIT_MESSAGE" value="[09-09-2022 task 3] can activate guard" />
+    <MESSAGE value="[12-09-2022 task 1] guard with redirect" />
+    <option name="LAST_COMMIT_MESSAGE" value="[12-09-2022 task 1] guard with redirect" />
   </component>
 </project>
