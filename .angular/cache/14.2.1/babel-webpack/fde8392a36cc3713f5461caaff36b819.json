@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const environment = {\n  production: true,\n  app: {\n    apiUrlBase: 'https://league-of-legends-upb-default-rtdb.firebaseio.com/'\n  }\n};","map":null,"metadata":{},"sourceType":"module"}
