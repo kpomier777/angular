@@ -5,6 +5,10 @@
 export const environment = {
   production: false,
 
+  app: {
+    apiBaseUrl: 'dddd'
+    
+  },
 
   auth: {
     apiBaseUrl: 'https://identitytoolkit.googleapis.com',

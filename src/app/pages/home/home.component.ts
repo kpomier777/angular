@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import {Component, OnInit} from '@angular/core';
+import {CarService} from "../services/car.service";
 @Component({
   selector: 'app-auth',
   templateUrl: './home.component.html',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private carService: CarService) {
+  }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.carService.getAllCars().subscribe(res => {
+      console.log('RESPONSE CARS: ', res)
+    })
   }
 
 }
