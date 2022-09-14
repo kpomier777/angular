@@ -12,4 +12,8 @@
 
 <button (click)="goView2()">view2 TS</button>
 
+
+<button [routerLink]="'view3'" [queryParams]="{name : 'maria',lastName:'perez'}">go to view 3</button>
+
+<button (click)="goView3()">view3 TS</button>
   <router-outlet></router-outlet>
