@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f3ff7a4-22b5-4425-b31e-5bad5a374bca" name="Changes" comment="[09-09-2022 task 2Â] auth expired interceptor" />
+    <list default="true" id="6f3ff7a4-22b5-4425-b31e-5bad5a374bca" name="Changes" comment="[09-09-2022 task 3] can activate guard" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +39,7 @@
       <recent name="$PROJECT_DIR$/src/app/pages/home" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/core/guards" />
       <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/src/app/pages/auth" />
     </key>
@@ -75,7 +76,7 @@
       <workItem from="1661806459563" duration="2240000" />
       <workItem from="1662672105487" duration="309000" />
       <workItem from="1662672418125" duration="6061000" />
-      <workItem from="1663018969018" duration="1920000" />
+      <workItem from="1663018969018" duration="2299000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <created>1659995064421</created>
@@ -147,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663020847295</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="[09-09-2022 task 3] can activate guard">
+      <created>1663021048595</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663021048595</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +181,7 @@
     <MESSAGE value="[08-09-2022 task 3] sing up and home view desing" />
     <MESSAGE value="[09-09-2022 task 1] auth interceptor part 1" />
     <MESSAGE value="[09-09-2022 task 2Â] auth expired interceptor" />
-    <option name="LAST_COMMIT_MESSAGE" value="[09-09-2022 task 2Â] auth expired interceptor" />
+    <MESSAGE value="[09-09-2022 task 3] can activate guard" />
+    <option name="LAST_COMMIT_MESSAGE" value="[09-09-2022 task 3] can activate guard" />
   </component>
 </project>
