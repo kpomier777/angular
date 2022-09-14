@@ -28,3 +28,10 @@
     <br> <button (click)="onSubmit(testForm2)"> enviar </button>
 
 </form>
+
+
+<p> ------------------- REACTIVE  FORMS --------------------- </p>
+
+
+<br>Color :<input type="text" [formControl]="colorControl">
+<br><button (click)="printColorControl()">Print Value color</button>
