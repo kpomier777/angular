@@ -1,3 +1,15 @@
 
 <p>SS</p>
+
+
+<input type="text" [(ngModel)]="id" >
+<button [routerLink]="['view1',id]" >view1</button>
+<button [routerLink]="['view2',id,'listNames',id]" >view2</button>
+
+
+<button (click)="goView1()">view1 TS</button>
+
+
+<button (click)="goView2()">view2 TS</button>
+
   <router-outlet></router-outlet>

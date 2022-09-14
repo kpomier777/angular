@@ -18,7 +18,6 @@ export class View1Component implements OnInit {
       console.log('params : ',params)
     })
 
-    //No es Dinamico
     console.log('Snapshot : ',this.activedRouter.snapshot.params)
 
   }
