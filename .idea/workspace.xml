@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f3ff7a4-22b5-4425-b31e-5bad5a374bca" name="Changes" comment="[05-09-2022 task 1] template driven forms">
+      <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.1/angular-webpack/18883d1f8ba27168f44d0ab6676275faa9c584c8/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.1/angular-webpack/18883d1f8ba27168f44d0ab6676275faa9c584c8/5.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.1/angular-webpack/18883d1f8ba27168f44d0ab6676275faa9c584c8/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.1/angular-webpack/18883d1f8ba27168f44d0ab6676275faa9c584c8/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/14.2.1/angular-webpack/18883d1f8ba27168f44d0ab6676275faa9c584c8/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/14.2.1/angular-webpack/18883d1f8ba27168f44d0ab6676275faa9c584c8/index.pack.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +71,7 @@
       <workItem from="1659994829368" duration="56000" />
       <workItem from="1659995012833" duration="1167000" />
       <workItem from="1662071939790" duration="2020000" />
-      <workItem from="1662411824617" duration="2163000" />
+      <workItem from="1662411824617" duration="3845000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <created>1659995064421</created>

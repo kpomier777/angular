@@ -35,3 +35,25 @@
 
 <br>Color :<input type="text" [formControl]="colorControl">
 <br><button (click)="printColorControl()">Print Value color</button>
+
+<p> ------------------- REACTIVE  FORMS  2 --------------------- </p>
+
+
+<form [formGroup]="personForm" >
+
+
+
+    <br>Name<input type="text"  [formControlName]="'name'" >
+    <br>Last Name <input type="text" formControlName="lastName">
+    <br>Age <input type="text" [formControlName]="'age'">
+    <br>country<input type="text" [formControlName]="'country'" >
+
+
+    <br><button (click)="sendPerson() ">Send</button>
+
+
+    <br><button (click)="disableName() ">disable </button>
+
+
+
+</form>

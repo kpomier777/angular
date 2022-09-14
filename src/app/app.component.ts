@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {FormControl} from "@angular/forms";
+import {FormBuilder, FormControl, FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'app-root',
@@ -12,14 +12,29 @@ export class AppComponent  implements OnInit{
 
   public colorControl = new FormControl ('');
 
+  public personForm! : FormGroup;
 
 
-    constructor() {
+
+    constructor(private formBuilder : FormBuilder) {
+
+        this.personForm = this.formBuilder.group(
+            {
+                name : '',
+                lastName : '',
+                age : '',
+                country:'',
+            }
+        )
     }
 
     ngOnInit() {
         this.colorControl.valueChanges.subscribe( value => {
             console.log('values changes : ' , value)
+        })
+
+        this.personForm.valueChanges.subscribe( value => {
+            console.log('value changes group control : ' , value )
         })
     }
 
@@ -33,4 +48,11 @@ export class AppComponent  implements OnInit{
     }
 
 
+    sendPerson() {
+        console.log('reactive form : ' , this.personForm )
+    }
+
+    disableName() {
+        this.personForm.get('name')?.disable();
+    }
 }
