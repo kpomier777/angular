@@ -26,6 +26,8 @@ export class AuthInterceptor implements HttpInterceptor {
             request = request.clone({
                 url: request.url,
                 params: params
+
+
             })
         }
 
