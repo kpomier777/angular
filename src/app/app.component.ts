@@ -94,11 +94,16 @@ export class AppComponent {
 
     //Convertir a un array filtrar las personas mayores a 10 , mostrar solo id
 
-    const result = Object.values(data).filter((obj) => {
-      return obj.age > 10;
-    });
+    const result = Object.values(data)
+      .filter((obj) => 
+        obj.age > 10
+      )
+      .map((p) => p.id);
 
     console.log('task 3 ', result);
+
+    //
+
   }
   // REST OPERATOR
   getREST(...params: any[]) {
