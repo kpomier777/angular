@@ -8,8 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'project';
 
-
-  enablePerson : boolean = true;
-
-  
+  level: number = 1;
+  enablePerson: boolean = true;
 }
