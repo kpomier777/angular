@@ -12,11 +12,20 @@ export class AppComponent {
 
   public student: string = 'example cristian';
 
-  public a = 0 ;
-  public b = 0 ;
+  public a = 0;
+  public b = 0;
 
   getPrint(event: any) {
     console.log('Hi parent component', event);
     this.person = event;
+  }
+
+  getLastName(event: any): void {
+    console.log('Last Name : ', event);
+  }
+
+
+  printName(name : any ) {
+    console.log('Name : ' , name )
   }
 }
