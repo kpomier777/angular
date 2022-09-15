@@ -54,14 +54,14 @@ export class AppComponent {
     console.log('SPREAD:', c);
 
     // REST OPERATOR
-    this.getREST(1, 2, 'hola');
+    this.getREST(1, 2, 'hola hahah xd');
 
     const person = {
       id: 1,
-      name: 'JUAN',
+      name: 'Cristian',
       country: {
         idCountry: 1,
-        cod: 'LP',
+        cod: 'CBBA',
       },
     };
 
@@ -70,6 +70,35 @@ export class AppComponent {
     //const ID = person.id
     const { country, id } = person;
     console.log('country:', country, id);
+
+    const data = {
+      0: {
+        id: 1,
+        name: 'cristian',
+        age: 24,
+      },
+      1: {
+        id: 2,
+        name: 'cristian 2',
+        age: 10,
+      },
+    };
+
+    //Convertir un array y obtener la suma de edades
+
+    const resp = Object.values(data).reduce((prev, value) => {
+      return prev + value.age;
+    }, 0);
+
+    console.log('resp', resp);
+
+    //Convertir a un array filtrar las personas mayores a 10 , mostrar solo id
+
+    const result = Object.values(data).filter((obj) => {
+      return obj.age > 10;
+    });
+
+    console.log('task 3 ', result);
   }
   // REST OPERATOR
   getREST(...params: any[]) {
