@@ -1,0 +1,12 @@
+<p>ANGULAR</p>
+
+<app-person
+  name="Cristian"
+  lastName="Paz"
+  [age]="0"
+  (print)="getPrint($event)"
+></app-person>
+
+<p>{{ person?.name }}</p>
+<p>{{ person?.lastName }}</p>
+<p>{{ person?.age }}</p>
