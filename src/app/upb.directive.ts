@@ -4,6 +4,9 @@ import {
   OnInit,
   TemplateRef,
   ViewContainerRef,
+  OnChanges,
+  SimpleChange,
+  SimpleChanges,
 } from '@angular/core';
 
 @Directive({
@@ -19,8 +22,10 @@ export class UpbDirective implements OnInit {
     //Eliminan o adicionan html
   }
 
-  ngOnInit() {
-    if (this.upb) {
+  ngOnInit() {}
+
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['upb'] && changes['upb'].currentValue) {
       this.viewContainer.createEmbeddedView(this.templateRef);
     } else {
       this.viewContainer.clear();
