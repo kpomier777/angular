@@ -6,6 +6,7 @@ import {
   Component,
   DoCheck,
   Input,
+  OnDestroy,
   OnInit,
 } from '@angular/core';
 
@@ -21,11 +22,15 @@ export class PersonComponent
     DoCheck,
     AfterContentChecked,
     AfterViewChecked,
-    AfterViewInit
+    AfterViewInit,
+    OnDestroy
 {
   @Input() name: string = '';
 
   constructor() {}
+  ngOnDestroy(): void {
+    console.log('ngOnDestroy');
+  }
   ngAfterViewInit(): void {
     console.log('ngAfterViewInit');
   }
