@@ -10,6 +10,11 @@ export class AppComponent {
   title = 'test';
   public person!: IPerson;
 
+  public student: string = 'example cristian';
+
+  public a = 0 ;
+  public b = 0 ;
+
   getPrint(event: any) {
     console.log('Hi parent component', event);
     this.person = event;
