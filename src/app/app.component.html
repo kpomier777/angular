@@ -12,5 +12,33 @@
 
 <div *upb="sw" style="border: 3px solid blue;">mi propia directiva</div>
 
-<input type="text" [(ngModel)]="title" />
+<input type="text" [(ngModel)]="title" />title
+
+<input type="number" [(ngModel)]="size" /> size
 <app-test [message]="title"></app-test>
+
+<div
+  [ngStyle]="{
+    background: 'red',
+    color: title,
+    size: '20'
+  }"
+>
+  NG STYLE
+</div>
+
+<div [style.background]="title">NG STYLE</div>
+
+<div [style.font-size.px]="size">tamanio</div>
+
+<div
+  [ngClass]="{
+    test1: size === 1,
+    test2: size === 2,
+    test3: size === 3
+  }"
+>
+  NG CLASS 1
+</div>
+
+<div [class.test1]="size === 1">NG CLASS 2</div>

@@ -9,4 +9,6 @@ export class AppComponent {
   title = 'project';
 
   sw = true;
+
+  size = 12;
 }
