@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IPerson } from './person/perso.model';
+import { IPerson } from './person/person.model';
 
 @Component({
   selector: 'app-root',
