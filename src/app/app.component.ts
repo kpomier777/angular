@@ -19,6 +19,24 @@ export class AppComponent {
 
     const auxFind = [1, 2, 3, 4, 5].find((num) => num === 3);
     console.log('auxFind:', auxFind);
+
+    const auxFindIndex = [1, 2, 3, 4, 5].findIndex((num) => num === 5);
+    console.log('auxFindIndex:', auxFindIndex);
+
+    const auxIndexOf = [1, 2, 3, 4, 5].indexOf(5);
+    console.log('auxIndexOf:', auxIndexOf);
+
+    const auxIndexOfString = 'Hola Mundo Test'.indexOf('Test');
+    console.log('auxIndexOfString:', auxIndexOfString);
+
+    const auxFilter = [1, 2, 3, 4, 5].filter((num) => num % 2 === 0);
+    console.log('auxFilter:', auxFilter);
+
+    const auxJoin = [1, 2, 3, 4, 5].join('*****');
+    console.log('auxJoin:', auxJoin);
+
+    const auxSplit = '1*****2*****3*****4*****5'.split('*****');
+    console.log('auxSplit:', auxSplit);
   }
 
   private getName(name: string): string {
